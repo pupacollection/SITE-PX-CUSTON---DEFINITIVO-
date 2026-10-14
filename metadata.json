@@ -1,0 +1,6 @@
+{
+  "name": "PX CUSTON — Eventos, Carros & Experiências",
+  "description": "Plataforma oficial da PX CUSTON para eventos automotivos, ingressos digitais com QR Code, pagamentos Mercado Pago e validação de check-in.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

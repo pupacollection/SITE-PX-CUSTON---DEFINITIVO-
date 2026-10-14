@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-px-black: #000000;
+    --color-px-dark: #111111;
+    --color-px-surface: #181818;
+    --color-px-surface-light: #222222;
+    --color-px-border: #2a2a2a;
+    --color-px-red: #FF1A2D;
+    --color-px-red-hover: #e00f21;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #000000;
+    color: #FFFFFF;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d0d0d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF1A2D;
+}
+
+/* Glow and Scanner effects */
+.glow-red {
+  box-shadow: 0 0 25px rgba(255, 26, 45, 0.35);
+}
+
+.glow-red-sm {
+  box-shadow: 0 0 12px rgba(255, 26, 45, 0.25);
+}
+
+.glow-red-text {
+  text-shadow: 0 0 12px rgba(255, 26, 45, 0.6);
+}
+
+@keyframes scanline {
+  0% {
+    top: 5%;
+    opacity: 0.8;
+  }
+  50% {
+    top: 90%;
+    opacity: 1;
+  }
+  100% {
+    top: 5%;
+    opacity: 0.8;
+  }
+}
+
+.animate-scanline {
+  animation: scanline 2.2s ease-in-out infinite;
+}
+
